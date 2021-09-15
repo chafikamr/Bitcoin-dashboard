@@ -1,0 +1,290 @@
+/*
+** Author : Chafik Amraoui
+** Date   : 11/09/2020
+** Title  : Hungry blogs
+** Design : https://elzero.org/frontend-food-menu-and-sidebar/
+*/
+
+
+/* Global Rules  */
+*,
+*::after,
+*::before { box-sizing: border-box }
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    height: 1000px;
+    background-color:rgb(255, 255, 255);
+    padding: 0;
+    margin: 0;
+    padding-left: 60px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* End Global Rules  */
+ 
+/*START HEADER */
+
+header{
+    display: flex;
+    justify-content: space-between;
+    height: 80px;
+    align-items: center;
+    border-bottom: 1px solid #f2f6fe;
+    padding: 0 30px;
+
+}
+
+.right {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.right .usr{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #aaaaaa;
+    font-size: 13px;
+    font-weight: 500;
+}
+.right .usr i:first-of-type{
+    margin-right: 10px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+    background-color: #1652f0;
+    border-radius: 50%;
+    font-size: 13px;
+}
+
+.right .usr i:last-of-type{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #1652f0;
+    font-size: 13px;
+    /* font-weight: 500; */
+    margin:0 10px
+}
+
+
+.right .balence {
+   /* background-color: greenyellow; */
+   display: flex;
+   width: 250px;
+   margin-right: 30px;
+   border-radius: 20px;
+   overflow: hidden;
+   font-size: 13px;
+   border: 1px solid rgb(224, 223, 226);
+  
+
+   
+}
+.right .balence .btc {
+   background-color:#eef2fe;
+   color: #1652f0;
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px;
+
+}
+.right .balence .btc i{
+ margin:0 10px;
+
+}
+.right .balence .usd {
+   /* background-color: rgb(193, 255, 47); */
+   color: rgb(205, 204, 207);
+   width: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   padding: 8px;
+
+}
+
+
+
+nav{
+    position: absolute;
+    width: 60px;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: blue;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+nav ul{
+    margin-top: 80px;
+}
+nav ul li{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 100;
+    opacity: .9;
+    cursor: pointer;
+}
+nav ul li:hover{
+  opacity: 1;
+}
+
+
+.hello{
+    padding: 20px;
+}
+.hello span{
+   color:#1652f0 ;
+   font-weight: 900;
+}
+.content .exchange{
+    display: flex;
+   justify-content: space-evenly;
+   flex-wrap: wrap;
+}
+.content .exchange .exchange_details{
+ /* background-color: wheat; */
+ width: 40%;
+}
+.content .exchange .exchange_info{
+ background-color: wheat;
+ width: 50%;
+}
+.content .exchange .exchange_details .buttons{
+ display: flex;
+ justify-content: space-between;
+}
+.content .exchange .exchange_details .buttons button{
+ width: 49%;
+ padding: 7px;
+ border: none;
+ outline: none;
+ border-radius: 3px;
+ 
+}
+.content .exchange .exchange_details .buttons button:first-of-type{
+ background-color: #1652f0;
+ color: white
+
+}
+.content .exchange .exchange_details .buttons button:last-of-type{
+border: 1px solid grey;
+color:#1652f0 ;
+background-color: transparent;
+
+}
+.exchange_info_box .row{
+  
+    /* background-color:red; */
+    /* margin-top: 10px; */
+}
+.exchange_info_box .row .label{
+    margin-bottom: 5px;
+    margin-top: 20px;
+    font-size: 13px;
+}
+.exchange_info_box .row .inf{
+   width: 100%;
+   background-color:rgb(242 246 254);
+   padding: 10px;
+   border-radius: 5px;
+   display: flex;
+   justify-content: space-between;
+}
+.exchange_info_box .row .inf>span{
+  width: 50%;
+  /* justify-content: cent */
+  align-items: center;
+  font-size: 13px;
+  color: #aaaaaa;
+   
+}
+.exchange_info_box .row button{
+ width: 100%;
+ background-color: #10d876;
+ height: 100%;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ padding: 10px;
+ border:none;
+ outline: none;
+ border-radius: 5px;
+ color: white;
+ font-size: 13px;
+   
+}
+/* .content .exchange .exchange_info .buttons{
+ display: flex;
+ justify-content: space-between;
+} */
+
+.note{
+    width: 100%;
+}
+
+/* 
+        Devices : MobilePhones & Tablets width low resolution. 
+        Width   : Under 767px. 
+*/
+@media(max-width:767px){}
+
+
+/* 
+        Devices : Tablets  and small screen laptops
+        Width   : between 768px and 992px 
+*/
+@media(min-width:768px){}
+
+
+/* 
+        Devices : laptops with medium screen sizes.
+        Width   : between 992px and 1200px. 
+*/
+@media(min-width:992px){}
+
+
+/* 
+        Devices : large and extra large screens.
+        Width   : starts from 1200px without any breakpoint to stop in.
+*/
+@media(min-width:1200px){}
+
+
+
+
+/* container  default */
+.container{
+        margin: auto;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-top: 50px;
+}
+
+ /* container for small screens */
+ @media(min-width:768px){
+        .container{ width: 750px }
+ }
+
+ /* container for medium screens */
+ @media(min-width:992px){
+        .container{ width: 970px }
+ }
+
+ /* container for large and extra large screens */
+ @media(min-width:992px){
+        .container{ width: 1170px }
+ }
