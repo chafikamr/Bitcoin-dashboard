@@ -14,8 +14,9 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
-    height: 1000px;
+    /* height: 000px; */
     background-color:rgb(255, 255, 255);
+    height: 100vh;
     padding: 0;
     margin: 0;
     padding-left: 60px;
@@ -160,7 +161,7 @@ nav ul li:hover{
  width: 40%;
 }
 .content .exchange .exchange_info{
- background-color: wheat;
+ /* background-color: wheat; */
  width: 50%;
 }
 .content .exchange .exchange_details .buttons{
@@ -234,6 +235,81 @@ background-color: transparent;
 
 .note{
     width: 100%;
+    color: #aaaaaa;
+    font-size: 13px;
+    margin-top: 80px;
+}
+
+.exchange_info .users{
+    display: flex;
+    justify-content: space-between;
+    color: #aaaaaa;
+    font-size: 13px;
+}
+.exchange_info .users .buyer,
+.exchange_info .users .seller
+{
+    display: flex;
+    justify-content: space-between;
+}
+.exchange_info .users .avatar{
+    width: 60px;
+}
+.exchange_info .users .details{
+    width: auto;
+}
+.exchange_info .users .details span{
+   display: block;
+   margin-top: 5px;
+}
+.exchange_info .users .details span:last-of-type{
+  color: #1652f0;
+}
+
+.exchange_info .users .img_container
+
+{
+   width: 50px;
+   max-height: 50px;
+   border-radius: 50%;
+   overflow: hidden;
+}
+.exchange_info .users .img_container img
+
+{
+  width: 100%;
+}
+.exchange_info .seller 
+
+{
+  flex-direction: row-reverse;
+}
+.exchange_info .seller .details,
+.exchange_info .seller .avatar
+{
+  direction: rtl;
+}
+
+
+.all_details {
+    margin-top: 20px;
+}
+.all_details .row {
+   display: flex;
+   background-color: #f2f6fe;
+   margin-top: 15px;
+   padding: 10px;
+   border-radius: 5px;
+   color: #b3aeb0;
+   font-size: 13px;
+
+}
+.all_details .row .label{
+  width: 50%;
+
+}
+.all_details .row .detail{
+    width: 50%
 }
 
 /* 
